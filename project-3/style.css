@@ -1,0 +1,14 @@
+body {
+    background-color: lime;
+}
+
+img {
+    transition: width 2s, height 2s;  
+}
+
+.bigger {
+    height: 200px;
+    width: 200px;
+    border-radius: 0%;
+    transition: width 2s, height 2s;
+}
