@@ -1,5 +1,19 @@
 body {
-    background-color: lime;
+    background-color: #54ADDF;
+    color: white;
+}
+h1 {
+    font-size: 100px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Arial';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    
+    
 }
 
 img {
@@ -12,3 +26,10 @@ img {
     border-radius: 0%;
     transition: width 2s, height 2s;
 }
+
+.title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 128px;
+    
