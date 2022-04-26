@@ -4,9 +4,10 @@ $(document).ready(function () {
     // show hide each itme
     //------------------------------------
 
-    $('.heading').click(function () {
-        $('.details').show();
+    $("#show").click(function () {
+        $("p").show();
     });
+});
     //---------------------------
     // setup show hide all button
     //---------------------------

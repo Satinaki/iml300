@@ -58,7 +58,7 @@ function draw() {
   if (frameCount % 25 === 0) {
     print(++count);
     //let size = random(sizes);
-    circles.push(new Circle(width / 2, 0, width/30));
+    circles.push(new Circle(width / 2, 0));
   }
   
   
@@ -78,7 +78,7 @@ function mousePressed (){
 }
 
 class Circle {
-  constructor(x, y, r) {
+  constructor(x, y) {
     let options = {
       // friction: 0.3,
       // restitution: 0.6
@@ -86,8 +86,8 @@ class Circle {
       friction: 0.3,
       restitution: 0.1,
     };
-    this.body = Bodies.circle(x, y, r, options);
-    this.r = r;
+    this.body = Bodies.circle(x, y, this.product.height - 50, options);
+//    this.r = r;
     this.product = random(imgs);
     World.add(world, this.body);
   }
@@ -100,7 +100,7 @@ class Circle {
     translate(pos.x, pos.y);
     rotate(angle);
     rectMode(CENTER);
-    image(this.product, 0, 0, this.r * 3, this.r * 3);
+    image(this.product, 0, 0);
     pop();
   }
 }
