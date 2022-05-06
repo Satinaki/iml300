@@ -5,7 +5,8 @@ $(document).ready(function () {
     //------------------------------------
 
     $("#show").click(function () {
-        $("p").show();
+        console.log("click")
+        $(".details").show();
     });
 });
     //---------------------------

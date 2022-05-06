@@ -10,6 +10,7 @@ var Engine = Matter.Engine;
   var Mouse = Matter.Mouse;
   var Bodies = Matter.Bodies;
 
+//let engine;
 let engine;
 let world;
 let circles = [];
@@ -19,7 +20,7 @@ let mConstraint;
 
 function preload() {
   
-  for (let i = 0; i < 17; i++) {
+  for (let i = 0; i < 50; i++) {
     imgs[i] = loadImage(`asset/asset${i}.png`);
   }
 }
@@ -86,9 +87,9 @@ class Circle {
       friction: 0.3,
       restitution: 0.1,
     };
-    this.body = Bodies.circle(x, y, this.product.height - 50, options);
 //    this.r = r;
     this.product = random(imgs);
+    this.body = Bodies.circle(x, y, this.product.height - 50, options);
     World.add(world, this.body);
   }
 
