@@ -1,29 +1,39 @@
-body {
-/*    background-color: #54ADDF;*/
-    background-color: #0074D9;
-    color: white;
-    font-family: 'Inter', sans-serif; 
+html {
+    height: 100%;
 }
+
+body {
+    /*    background-color: #54ADDF;*/
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+.index {
+    background-color: #0074D9;
+}
+
 h1 {
     font-size: 100px;
     margin: 0;
     padding: 0;
     text-align: center;
-/*    position: absolute;*/
-/*    top: 50%;*/
-/*    left: 50%;*/
-/*    transform: translateX(-50%) translateY(-50%);*/
-/*    font-family: 'Inter', sans-serif;  */
+    /*    position: absolute;*/
+    /*    top: 50%;*/
+    /*    left: 50%;*/
+    /*    transform: translateX(-50%) translateY(-50%);*/
+    /*    font-family: 'Inter', sans-serif;  */
 }
 
 li {
     font-family: monospace;
     font-size: 16px;
 }
+
 p {
-    font-family:monospace;
+    font-family: monospace;
     font-size: 16px;
 }
+
 .item {
     position: absolute;
     top: 50%;
@@ -32,7 +42,7 @@ p {
 }
 
 img {
-    transition: width 2s, height 2s;  
+    transition: width 2s, height 2s;
 }
 
 .bigger {
@@ -45,7 +55,7 @@ img {
 /*page 1*/
 .details {
     display: none;
-    
+
 }
 
 /*
@@ -58,6 +68,7 @@ a {
     color: white;
     text-decoration: none;
 }
+
 .details a:hover {
     color: crimson;
 }
@@ -75,61 +86,62 @@ a {
 
 
 .split {
-  height: 100%;
-  width: 50%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  overflow-x: hidden;
-  padding-top: 20px;
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
 }
 
 .left-1 {
-  left: 0;
-  background-color: teal;
+    left: 0;
+    background-color: #0074D9;
     cursor: help;
 }
 
 .right-1 {
-  right: 0;
-  background-color: green;
+    right: 0;
+    background-color: #5c9a1c;
     cursor: help;
 }
 
 .left-2 {
     left: 0;
-    background-color:mediumseagreen;
+    background-color: mediumseagreen;
 }
 
 .right-2 {
     right: 0;
-    background-color:darkturquoise
+    background-color: darkturquoise
 }
 
 .left-3 {
     left: 0;
-    background-color:black;
+    background-color: black;
 }
 
 .right-3 {
     right: 0;
-    background-color:darkblue;
+    background-color: darkblue;
 }
 
 
 
 .centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .centered a {
     color: white;
     text-decoration: none;
 }
+
 .centered a:hover {
     cursor: help;
     color: darkgrey;
@@ -145,15 +157,51 @@ canvas {
 /*page 3*/
 
 /*end*/
-.end{
-      background-image: linear-gradient(180deg, red, yellow);
+.end {
+    width=100%;
+    background-image: linear-gradient(180deg, red, orange);
+}
+
+.end p {
+    text-align: center;
+}
+
+.end h2 {
+    margin-left: 2%;
+    margin-top: 2%;
 }
 
 .future-button {
+    height: 100px;
+    width: 100px;
+    /*    background: #00000000;*/
+    border: none;
+    outline: none;
     position: fixed;
     right: 0;
     bottom: 0;
     margin-bottom: 20px;
     margin-right: 20px;
-    background-image: arrow-right.png;
+}
+
+.back-button {
+    height: 100px;
+    width: 100px;
+    border: none;
+    outline: none;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.end-left {
+    margin-top: 50px;
+    left: 0;
+}
+
+.end-right {
+    right: 0;
+    margin-top: 50px;
 }
